@@ -1,1 +1,5 @@
 /* sass --watch styles/input.scss styles/output.css */
+
+h1, h2, p{
+    font-family: 'Arimo', sans-serif;
+}
