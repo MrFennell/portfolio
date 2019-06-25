@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Ryan Fennell</title>
     <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
@@ -11,40 +10,116 @@
    
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <header>
-          <nav>
-            <ul class="nav nav-tabs">
-              <li role="presentation"><a>About</a></li>
-              <li role="presentation"></li><a>Education</a></li>
-              <li></li><a>Projects</a></li>
-              <li></li><a>Contact</a></li>
-              <li></li><a>Resume</a></li>
-              <li></li><a>Github</a></li>
-            </ul>
-          </nav>
-      
-            <h1>Ryan Fennell</h1>
-            <p>Web Developer</p>
+          <nav class="navbar navbar-expand-lg navbar-light float-right">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Github</a></li>
+                </ul>
+              </div>
+            </nav>
+         <div id="wrapper">    
+            <div id="wrapper-inner">
+               
+              <h1 class="h1Anime" id="name-header" >
+                <span class="text-wrapper">
+                  <span class="letters">Ryan Fennell</span>
+              </span>
+              </h1>
+              <h2 id="subtitle" class="ml13">Web Developer</h2></div>
+        </div> 
       </header>
       <main>
         <section id="about">
-          <h2>About</h2>
-          
+          <h3>Hello</h3>
+          <p> My name is Ryan Fennell and I am a web developer living in the Baltimore area. 
+            I am a front-end developer with full stack leanings that would love to be a part of your team. I have over seven years of varied IT experience and have recently been pivoting back to a developer role 
+              after spending over half a decade as a functional SAP consultant. One thing has become clear throughout my career: I like to get my hands dirty with code and create things 
+              alongside other talented individuals.
+            </p>  
+
         </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            
+        <section id="experience">
+            <h3>Experience</h3>
+              <div class="experience__section" id="experience--past-work">
+                  <h4>Past Work</h4>
+                  <div class="experience__section__section">
+                    <div class="past-work-section__header">
+                      <h5 class="experience__section__section__header__title">Air Products</h5>
+                      <p class="experience__section__section__header__dates">January 2017 - October 2018</p>
+                      <p class="past-work-title">SAP APO Consultant</p>
+                    </div>
+                    <div class="past-work-section__description">
+                      <p>
+                          I was brought on to consult on APO services while Air Products divested itself into the companies Versum and Evonik. 
+                          Soon I was also brought onto the data extraction team to help facilitate data transfer leading up to the 
+                          companies' separation. I was also part of the QA team and worked to create automated regression testing with Worksoft Certify.    
+                      </p>
+                    </div>
+                  </div>
+                  <div class="experience__section__section">
+                    <div class="experience__section__section__header">
+                      <h5 class="experience__section__section__header__title">Comtech LLC</h5>
+                      <p class="experience__section__section__header__dates">August 2014 - November 2016</p>
+                      <p class="past-work-title">SAP Consultant on NAVYERP project</p>
+                    </div>
+                    <div class="past-work-section__description">
+                      <p>
+                        This was a multi-year contract with the Mechanicsburg Naval Support Activity, where I was part of a team of consultants facilitating 
+                        SAP changes and upkeep within the Navy's massive supply chain network. My primary roles were to create, run and document regression tests for system changes as well as provide documentation
+                        of the system itself.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+              <div class="experience__section" id="experience--education">
+                  <h4>Education</h4>
+                      
+                    <div class="experience__section__section__header">
+                      <h5 class="experience__section__section__header__title">The Art Institute of Philadelphia</h5>
+                      <p class="experience__section__section__header__dates">August 2008 - November 2011</p>
+                      <p>Bachelors of Science in Web Design and Development</p>
+                    </div>
+
+                    <div class="experience__section__section__header">
+                        <h5 class="experience__section__section__header__title">Betamore</h5>
+                        <p class="experience__section__section__header__dates">February 2019 - May 2019</p>
+                        <p>Intro to Full Stack Development</p>
+                    </div>
+
+                    <div class="experience__section__section__header">
+                        <h5 class="experience__section__section__header__title">Free Code Camp</h5>
+                        <p class="experience__section__section__header__dates">May 2019 - June 2019</p>
+                        <p>Front-end Developer Certification</p>
+                    </div>
+
+
+              </div>
+              
+              <div class="experience__section" id="experience--past-work">
+                  <h4>Skills</h4>
+              </div>
+              
         </section>
       </main>
-      
+
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="scripts/jquery.waypoints.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified CSS -->
-
+    <script src="scripts/animation.js"></script>
   </body>
 </html>

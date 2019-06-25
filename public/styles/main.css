@@ -1,5 +1,60 @@
-/* sass --watch styles/input.scss styles/output.css */
-
-h1, h2, p{
-    font-family: 'Arimo', sans-serif;
+html {
+  scroll-behavior: smooth;
 }
+
+.container-fluid {
+  padding: 0px;
+}
+
+h1, h2, p {
+  font-family: "Arimo", sans-serif;
+}
+
+h1 {
+  font-size: 9.5rem;
+}
+
+header {
+  height: 100vh;
+  background-color: #FEFCFB;
+  z-index: 0;
+}
+header #wrapper {
+  text-align: center;
+  padding-top: 30vh;
+}
+header #wrapper #wrapper-inner {
+  display: inline-block;
+}
+header #wrapper #wrapper-inner h1 {
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+  color: #0A1128;
+}
+header #wrapper #wrapper-inner h2 {
+  text-align: right;
+  margin-top: -5rem;
+  margin-right: 10px;
+  color: #0A1128;
+}
+
+.h1Anime {
+  position: relative;
+}
+
+.h1Anime .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.h1Anime .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+/*# sourceMappingURL=main.css.map */

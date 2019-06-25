@@ -1,0 +1,64 @@
+// sass --watch public/styles/input.scss public/styles/main.css 
+
+$black-blue:#0A1128;
+$dark-blue:#001F56;
+$cerulean: #034078;
+$green: #2C8C99;
+$white: #FEFCFB;
+
+html{
+    scroll-behavior: smooth;
+}
+.container-fluid {
+   padding: 0px;
+}
+h1, h2, p{
+    font-family: 'Arimo', sans-serif;
+}
+h1{
+    font-size:9.5rem;
+    
+}
+
+header{
+    height: 100vh;
+    background-color:$white;
+    z-index: 0;
+    #wrapper{
+        text-align: center;
+        padding-top: 30vh;
+        #wrapper-inner{
+            display: inline-block;
+            
+            h1{
+                display: inline-block;
+                margin: 0;
+                white-space: nowrap;
+                color:$black-blue;
+            }
+            h2{
+                text-align: right;
+                margin-top: -5rem;
+                margin-right: 10px;
+                color:$black-blue;
+            }
+        }
+    }
+}
+.h1Anime {
+    position: relative;
+  }
+  
+  .h1Anime .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .h1Anime .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
