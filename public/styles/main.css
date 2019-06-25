@@ -11,7 +11,13 @@ h1, h2, p {
 }
 
 h1 {
-  font-size: 9.5rem;
+  font-size: 10vw;
+}
+
+h4 {
+  border-bottom: 1px solid #0A1128;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 header {
@@ -33,9 +39,19 @@ header #wrapper #wrapper-inner h1 {
 }
 header #wrapper #wrapper-inner h2 {
   text-align: right;
-  margin-top: -5rem;
+  margin-top: -6vw;
   margin-right: 10px;
   color: #0A1128;
+  font-size: 2vw;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1030;
+  background-color: #FEFCFB;
+  width: 100%;
 }
 
 .h1Anime {
@@ -62,7 +78,7 @@ main {
 }
 
 #about {
-  margin: 3% 3% 0 3%;
+  margin: 22px 3% 0 3%;
 }
 #about .about__section {
   padding: 22px;
@@ -71,12 +87,23 @@ main {
 }
 
 #experience {
-  margin: 3% 3% 0 3%;
+  margin: 22px 3% 0 3%;
 }
 #experience .experience__section {
   border-radius: 3px;
   padding: 22px;
   background-color: #FEFCFB;
+}
+#experience .experience__section .experience__section__section__header__dates {
+  margin-bottom: 0;
+}
+
+#technology__section {
+  margin-top: 22px;
+}
+
+.icon {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
