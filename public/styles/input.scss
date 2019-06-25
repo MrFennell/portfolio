@@ -5,7 +5,10 @@ $dark-blue:#001F56;
 $cerulean: #034078;
 $green: #2C8C99;
 $white: #FEFCFB;
-
+$section-padding: 22px;
+$section-border: 3px;
+$section-background: $white;
+$section-margin: 3% 3% 0 3%;
 html{
     scroll-behavior: smooth;
 }
@@ -23,7 +26,6 @@ h1{
 header{
     height: 100vh;
     background-color:$white;
-    z-index: 0;
     #wrapper{
         text-align: center;
         padding-top: 30vh;
@@ -61,4 +63,27 @@ header{
   .h1Anime .letter {
     display: inline-block;
     line-height: 1em;
+  }
+main{
+    background-color: $black-blue;
+    padding-top: 1px;
+}
+
+  #about{
+    
+    margin: $section-margin ;
+
+    .about__section{
+        padding: $section-padding;
+        border-radius: $section-border;
+        background-color: $section-background;
+    }
+  }
+  #experience{
+    margin: $section-margin;
+    .experience__section{
+        border-radius: $section-border;
+        padding: $section-padding;
+        background-color: $section-background;
+    }
   }

@@ -17,7 +17,6 @@ h1 {
 header {
   height: 100vh;
   background-color: #FEFCFB;
-  z-index: 0;
 }
 header #wrapper {
   text-align: center;
@@ -55,6 +54,29 @@ header #wrapper #wrapper-inner h2 {
 .h1Anime .letter {
   display: inline-block;
   line-height: 1em;
+}
+
+main {
+  background-color: #0A1128;
+  padding-top: 1px;
+}
+
+#about {
+  margin: 3% 3% 0 3%;
+}
+#about .about__section {
+  padding: 22px;
+  border-radius: 3px;
+  background-color: #FEFCFB;
+}
+
+#experience {
+  margin: 3% 3% 0 3%;
+}
+#experience .experience__section {
+  border-radius: 3px;
+  padding: 22px;
+  background-color: #FEFCFB;
 }
 
 /*# sourceMappingURL=main.css.map */
