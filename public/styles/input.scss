@@ -5,27 +5,70 @@ $dark-blue:#001F56;
 $cerulean: #034078;
 $green: #2C8C99;
 $white: #FEFCFB;
-$section-padding: 22px;
+$section-padding: 22px 22px 22px 22px;
 $section-border: 3px;
 $section-background: $white;
-$section-margin: 22px 3% 0 3%;
+// $section-margin: 22px 3% 22px 3%;
+$section-content-margin: 22px 3% 0 3%;
 html{
     scroll-behavior: smooth;
 }
+body{
+  background-color: $white;
+}
 .container-fluid {
    padding: 0px;
+}
+.row {
+  margin: 0;
 }
 h1, h2, p{
     font-family: 'Arimo', sans-serif;
 }
 h1{
     // font-size:9.5rem;
-    font-size: 10vw;
 }
-h4{
+h2{
+  color: $green;
+}
+.btn-primary{
+  background-color: $green;
+  border-color:$green;
+}
+.btn-primary:hover{
+  background-color: $cerulean;
+  border-color:$cerulean;
+}
+h1{
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+  color:$black-blue;
+  font-size: 10vw;
+  opacity: 0;
+
+}
+h2{
+  text-align: right;
+  // margin-top: -5rem;
+  margin-top: -6vw;
+  margin-right: 10px;
+  color: $black-blue;
+  font-size: 2vw;
+ 
+
+}
+#subtitle{
+  opacity: 0;
+}
+h3{
     border-bottom: 1px solid $black-blue;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+}
+h4{
+  margin:0; 
+  padding: 0;
 }
 header{
     height: 100vh;
@@ -35,21 +78,6 @@ header{
         padding-top: 30vh;
         #wrapper-inner{
             display: inline-block;
-            
-            h1{
-                display: inline-block;
-                margin: 0;
-                white-space: nowrap;
-                color:$black-blue;
-            }
-            h2{
-                text-align: right;
-                // margin-top: -5rem;
-                margin-top: -6vw;
-                margin-right: 10px;
-                color:$black-blue;
-                font-size: 2vw;
-            }
         }
     }
 }
@@ -63,47 +91,80 @@ header{
 }
 .h1Anime {
     position: relative;
-  }
-  
-  .h1Anime .text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-top: 0.2em;
-    padding-right: 0.05em;
-    padding-bottom: 0.1em;
-    overflow: hidden;
-  }
-  
-  .h1Anime .letter {
-    display: inline-block;
-    line-height: 1em;
-  }
-main{
-    background-color: $black-blue;
-    padding-top: 1px;
 }
-  #about{
-    margin: $section-margin ;
-    .about__section{
+.h1Anime .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.h1Anime .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+// section{
+//   padding: 3% 0 3% 0;
+// }
+#about{
+    background-color: $black-blue;
+    padding: 3rem 0 3rem 0;
+  #hello{
+    margin: $section-content-margin ;
+    .hello__section{
         padding: $section-padding;
         border-radius: $section-border;
         background-color: $section-background;
     }
   }
   #experience{
-    margin: $section-margin;
+    margin: $section-content-margin;
     .experience__section{ 
         border-radius: $section-border;
         padding: $section-padding;
         background-color: $section-background;
-        .experience__section__section__header__dates{
+        .experience__section__content__header__dates{
             margin-bottom: 0;
         }
     }
   }
-#technology__section{
-    margin-top:22px;
-}
-  .icon{
-    font-size:2rem;
+  #technology__section{
+      margin-top:22px;
   }
+}
+.icon{
+  font-size:2rem;
+  color: $green;
+}
+#projects{
+  // 
+  // background-color: $black-blue;
+  // margin: $section-content-margin;
+  padding: 0 0 3rem 0;
+  // padding: $section-padding;
+    #projects__content{
+      border-radius: $section-border;
+      margin: $section-content-margin;
+      padding: $section-padding;
+      background-color: $section-background;
+      .card{
+        height: 200px;
+      }
+   }
+}
+#contact{
+  // 
+  background-color: $white;
+  // margin: $section-content-margin;
+  padding: 3rem 0 3rem 0;
+  // padding: $section-padding;
+    #contact__content{
+      border-radius: $section-border;
+      margin: $section-content-margin;
+      padding: $section-padding;
+      background-color: $section-background;
+
+   }
+}

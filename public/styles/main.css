@@ -2,22 +2,66 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #FEFCFB;
+}
+
 .container-fluid {
   padding: 0px;
+}
+
+.row {
+  margin: 0;
 }
 
 h1, h2, p {
   font-family: "Arimo", sans-serif;
 }
 
-h1 {
-  font-size: 10vw;
+h2 {
+  color: #2C8C99;
 }
 
-h4 {
+.btn-primary {
+  background-color: #2C8C99;
+  border-color: #2C8C99;
+}
+
+.btn-primary:hover {
+  background-color: #034078;
+  border-color: #034078;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+  color: #0A1128;
+  font-size: 10vw;
+  opacity: 0;
+}
+
+h2 {
+  text-align: right;
+  margin-top: -6vw;
+  margin-right: 10px;
+  color: #0A1128;
+  font-size: 2vw;
+}
+
+#subtitle {
+  opacity: 0;
+}
+
+h3 {
   border-bottom: 1px solid #0A1128;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -30,19 +74,6 @@ header #wrapper {
 }
 header #wrapper #wrapper-inner {
   display: inline-block;
-}
-header #wrapper #wrapper-inner h1 {
-  display: inline-block;
-  margin: 0;
-  white-space: nowrap;
-  color: #0A1128;
-}
-header #wrapper #wrapper-inner h2 {
-  text-align: right;
-  margin-top: -6vw;
-  margin-right: 10px;
-  color: #0A1128;
-  font-size: 2vw;
 }
 
 .navbar {
@@ -72,38 +103,60 @@ header #wrapper #wrapper-inner h2 {
   line-height: 1em;
 }
 
-main {
-  background-color: #0A1128;
-  padding-top: 1px;
-}
-
 #about {
+  background-color: #0A1128;
+  padding: 3rem 0 3rem 0;
+}
+#about #hello {
   margin: 22px 3% 0 3%;
 }
-#about .about__section {
-  padding: 22px;
+#about #hello .hello__section {
+  padding: 22px 22px 22px 22px;
   border-radius: 3px;
   background-color: #FEFCFB;
 }
-
-#experience {
+#about #experience {
   margin: 22px 3% 0 3%;
 }
-#experience .experience__section {
+#about #experience .experience__section {
   border-radius: 3px;
-  padding: 22px;
+  padding: 22px 22px 22px 22px;
   background-color: #FEFCFB;
 }
-#experience .experience__section .experience__section__section__header__dates {
+#about #experience .experience__section .experience__section__content__header__dates {
   margin-bottom: 0;
 }
-
-#technology__section {
+#about #technology__section {
   margin-top: 22px;
 }
 
 .icon {
   font-size: 2rem;
+  color: #2C8C99;
+}
+
+#projects {
+  padding: 0 0 3rem 0;
+}
+#projects #projects__content {
+  border-radius: 3px;
+  margin: 22px 3% 0 3%;
+  padding: 22px 22px 22px 22px;
+  background-color: #FEFCFB;
+}
+#projects #projects__content .card {
+  height: 200px;
+}
+
+#contact {
+  background-color: #FEFCFB;
+  padding: 3rem 0 3rem 0;
+}
+#contact #contact__content {
+  border-radius: 3px;
+  margin: 22px 3% 0 3%;
+  padding: 22px 22px 22px 22px;
+  background-color: #FEFCFB;
 }
 
 /*# sourceMappingURL=main.css.map */
