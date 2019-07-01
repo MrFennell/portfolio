@@ -13,6 +13,7 @@
   <body>
       <header>
           <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"><img src="/images/logo-cerulean.svg"/></a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -221,7 +222,7 @@
         <p>2019 Ryan Fennell</p>
         <div id="footer-icons">
           <a href="https://www.linkedin.com/in/ryan-fennell-78704243/" alt="linkedIn" target="_blank"><span class="icon" alt="css3" ><i class="fab fa-linkedin"></i></span></a>
-          <a href="https://github.com/MrFennell" alt="github"  target="_blank"><span class="icon" alt="css3"><i class="fab fa-github"></i></span></a>
+          <a href="https://github.com/MrFennell" alt="github"  target="_blank" id=><span class="icon" alt="css3"><i class="fab fa-github"></i></span></a>
         </div>
       </footer>
 
