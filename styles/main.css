@@ -128,11 +128,13 @@ header #wrapper #wrapper-inner {
 #about #experience .experience__section #expand-past-work p {
   margin: 0;
   color: #2C8C99;
+  transition: 0.3s;
 }
 #about #experience .experience__section #expand-past-work .icon {
   font-size: 2.5rem;
   position: relative;
   top: -22px;
+  transition: 0.2s;
 }
 #about #experience .experience__section #expand-past-work:hover {
   cursor: pointer;
@@ -188,6 +190,12 @@ footer p {
 }
 footer #footer-icons {
   text-align: center;
+}
+footer #footer-icons .icon {
+  transition: 0.2s;
+}
+footer #footer-icons .icon:hover {
+  color: #0A1128;
 }
 
 /*# sourceMappingURL=main.css.map */
