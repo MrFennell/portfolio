@@ -19,10 +19,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item text-center"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item text-center"><a class="nav-link" href="#">Projects</a></li>
-                <li class="nav-item text-center"><a class="nav-link" href="#">Contact</a></li>
-                <li class="nav-item text-center"><a class="nav-link" href="#">Resume</a></li>
-                <li class="nav-item text-center"><a class="nav-link" href="#">Github</a></li>
+                <li class="nav-item text-center"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item text-center"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item text-center"><a class="nav-link" href="#" >Resume</a></li>
+                <li class="nav-item text-center"><a class="nav-link" href="https://github.com/MrFennell">Github</a></li>
               </ul>
             </div>
           </nav>
@@ -54,61 +54,61 @@
               </section>
               <section id="experience" class="row justify-content-between">
                 <div class="col-md-6">
-                    <div class="experience__section">
-                        <h3>Past Work</h3>
-                        <div class="experience__section__content">
-                          <div class="past-work-section__header">
-                            <h4 class="experience__section__content__header__title">Air Products</h4>
-                            <p class="experience__section__content__header__dates">January 2017 - October 2018</p>
-                            <p class="past-work-title">SAP APO Consultant</p>
-                          </div>
-                          <div class="past-work-section__description">
-                            <p>
-                                I was brought on to consult on APO services while Air Products divested itself into the companies Versum and Evonik. 
-                                Soon I was also brought onto the data extraction team to help facilitate data transfer leading up to the 
-                                companies' separation. I was also part of the QA team and worked to create automated regression testing with Worksoft Certify.    
-                            </p>
-                          </div>
+                  <div class="experience__section">
+                      <h3>Past Work</h3>
+                        <div class="past-work-section__header">
+                          <h4 class="experience__section__header__title">Air Products</h4>
+                          <p class="experience__section__header__dates">January 2017 - October 2018</p>
+                          <p class="past-work-title">SAP APO Consultant</p>
                         </div>
-                        <div class="experience__section__content">
-                          <div class="experience__section__content__header">
-                            <h4 class="experience__section__content__header__title">Comtech LLC</h4>
-                            <p class="experience__section__content__header__dates">August 2014 - November 2016</p>
-                            <p class="past-work-title">SAP Consultant on NAVYERP project</p>
-                          </div>
-                          <div class="past-work-section__description">
-                            <p>
-                              This was a multi-year contract with the Mechanicsburg Naval Support Activity, where I was part of a team of consultants facilitating 
-                              SAP changes and upkeep within the Navy's massive supply chain network. My primary roles were to create, run and document regression tests for system changes as well as provide documentation
-                              of the system itself.
-                            </p>
+                        <div class="past-work-section__description">
+                          <p>
+                              I was brought on to consult on APO services while Air Products divested itself into the companies Versum and Evonik. 
+                              Soon I was also brought onto the data extraction team to help facilitate data transfer leading up to the 
+                              companies' separation. I was also part of the QA team and worked to create automated regression testing with Worksoft Certify.    
+                          </p>
                         </div>
+                        <div class="experience__section__header">
+                          <h4 class="experience__section__header__title">Comtech LLC</h4>
+                          <p class="experience__section__header__dates">August 2014 - November 2016</p>
+                          <p class="past-work-title">SAP Consultant on NAVYERP project</p>
+                        </div>
+                        <div class="past-work-section__description">
+                          <p>
+                            This was a multi-year contract with the Mechanicsburg Naval Support Activity, where I was part of a team of consultants facilitating 
+                            SAP changes and upkeep within the Navy's massive supply chain network. My primary roles were to create, run and document regression tests for system changes as well as provide documentation
+                            of the system itself.
+                          </p>
                       </div>
+                      <div id="expand-past-work">
+                        <p>See More</p>
+                        <span class="icon"><i class="fas fa-caret-down"></i></span>
+                      </div>  
                   </div>
               </div>
               <div class="col-md-6">
                   <div class="row">
-                    <div class="col-sm">
+                    <div class="col">
                         <div class="experience__section">
                             <h3>Education</h3>
                               <div class="experience__section__section__header">
-                                <h4 class="experience__section__section__header__title">The Art Institute of Philadelphia</h4>
-                                <p class="experience__section__section__header__dates">August 2008 - November 2011</p>
+                                <h4 class="experience__section__header__title">The Art Institute of Philadelphia</h4>
+                                <p class="experience__section__header__dates">August 2008 - November 2011</p>
                                 <p>Bachelors of Science in Web Design and Development</p>
                               </div>
 
                               <div class="experience__section__section__header">
-                                  <h4 class="experience__section__section__header__title">Betamore</h4>
-                                  <p class="experience__section__section__header__dates">February 2019 - May 2019</p>
+                                  <h4 class="experience__section__header__title">Betamore</h4>
+                                  <p class="experience__section__header__dates">February 2019 - May 2019</p>
                                   <p>Intro to Full Stack Development</p>
                               </div>
 
                               <div class="experience__section__section__header">
-                                  <h4 class="experience__section__section__header__title">Free Code Camp</h4>
-                                  <p class="experience__section__section__header__dates">May 2019 - June 2019</p>
+                                  <h4 class="experience__section__header__title">Free Code Camp</h4>
+                                  <p class="experience__section__header__dates">May 2019 - June 2019</p>
                                   <p>Front-end Developer Certification</p>
                               </div>
-                        </div>
+                         </div>
                       </div>
                   </div>
                   <div class="row">
@@ -160,25 +160,24 @@
                       <div class="row">
                         <div class="col-lg-3 col-sm-12">
                             <div class="card">
-                                sds
                             </div>
 
                         </div>
                         <div class="col-lg-3 col-sm-12">
                             <div class="card">
-                                sds
+                                
                             </div>
 
                         </div>
                         <div class="col-lg-3 col-sm-12">
                             <div class="card">
-                                sds
+                                
                             </div>
 
                         </div>
                         <div class="col-lg-3 col-sm-12">
                             <div class="card">
-                                sds
+                                
                             </div>
 
                         </div>
@@ -193,7 +192,7 @@
                       <h3>Contact</h3>
                       <div id="contact" class="row">
                         <div class="col-md-6">
-                          <p>Please feel free to reach out to me.</p>
+                          <p>Please feel free to reach out to me with the form to the right.</p>
                           <p>Alternatively you can shoot me an email directly at ryan@fennellweb.com or you can find me at my <a href="https://www.linkedin.com/in/ryan-fennell-78704243/" >linkedIn</a>.</p>
                         </div>
                         <div class="col-md-6">
@@ -215,9 +214,16 @@
                             </form>
                         </div>
                       </div>
-                  </div>
+                    </div>
           </section>
       </main>
+      <footer>
+        <p>2019 Ryan Fennell</p>
+        <div id="footer-icons">
+          <a href="https://www.linkedin.com/in/ryan-fennell-78704243/" alt="linkedIn" target="_blank"><span class="icon" alt="css3" ><i class="fab fa-linkedin"></i></span></a>
+          <a href="https://github.com/MrFennell" alt="github"  target="_blank"><span class="icon" alt="css3"><i class="fab fa-github"></i></span></a>
+        </div>
+      </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

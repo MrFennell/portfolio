@@ -107,24 +107,42 @@ header #wrapper #wrapper-inner {
   background-color: #0A1128;
   padding: 3rem 0 3rem 0;
 }
-#about #hello {
-  margin: 22px 3% 0 3%;
-}
 #about #hello .hello__section {
   padding: 22px 22px 22px 22px;
   border-radius: 3px;
   background-color: #FEFCFB;
-}
-#about #experience {
-  margin: 22px 3% 0 3%;
 }
 #about #experience .experience__section {
   border-radius: 3px;
   padding: 22px 22px 22px 22px;
   background-color: #FEFCFB;
 }
-#about #experience .experience__section .experience__section__content__header__dates {
-  margin-bottom: 0;
+#about #experience .experience__section .experience__section__header__dates {
+  font-size: smaller;
+}
+#about #experience .experience__section #expand-past-work {
+  text-align: center;
+  padding-top: 1em;
+  height: 64px;
+}
+#about #experience .experience__section #expand-past-work p {
+  margin: 0;
+  color: #2C8C99;
+}
+#about #experience .experience__section #expand-past-work .icon {
+  font-size: 2.5rem;
+  position: relative;
+  top: -22px;
+}
+#about #experience .experience__section #expand-past-work:hover {
+  cursor: pointer;
+}
+#about #experience .experience__section #expand-past-work:hover p {
+  margin: 0;
+  color: #0A1128;
+}
+#about #experience .experience__section #expand-past-work:hover .icon {
+  color: #0A1128;
 }
 #about #technology__section {
   margin-top: 22px;
@@ -157,6 +175,19 @@ header #wrapper #wrapper-inner {
   margin: 22px 3% 0 3%;
   padding: 22px 22px 22px 22px;
   background-color: #FEFCFB;
+}
+
+footer {
+  padding: 3rem 0 1em 0;
+}
+footer p {
+  text-align: center;
+  margin: 0;
+  font-size: smaller;
+  opacity: 0.7;
+}
+footer #footer-icons {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

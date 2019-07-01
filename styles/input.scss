@@ -1,4 +1,4 @@
-// sass --watch public/styles/input.scss public/styles/main.css 
+// sass --watch styles/input.scss styles/main.css 
 
 $black-blue:#0A1128;
 $dark-blue:#001F56;
@@ -55,8 +55,6 @@ h2{
   margin-right: 10px;
   color: $black-blue;
   font-size: 2vw;
- 
-
 }
 #subtitle{
   opacity: 0;
@@ -112,7 +110,7 @@ header{
     background-color: $black-blue;
     padding: 3rem 0 3rem 0;
   #hello{
-    margin: $section-content-margin ;
+    // margin: $section-content-margin ;
     .hello__section{
         padding: $section-padding;
         border-radius: $section-border;
@@ -120,13 +118,40 @@ header{
     }
   }
   #experience{
-    margin: $section-content-margin;
-    .experience__section{ 
+    // margin: $section-content-margin;
+    .experience__section{
         border-radius: $section-border;
         padding: $section-padding;
         background-color: $section-background;
-        .experience__section__content__header__dates{
-            margin-bottom: 0;
+
+        .experience__section__header__dates{
+          font-size: smaller;
+        }
+        #expand-past-work{
+          text-align: center;
+          padding-top: 1em;
+          height: 64px;
+          p{
+            margin:0;
+            color: $green;
+          }
+          .icon{
+            font-size: 2.5rem;
+            position: relative;
+            top: -22px;
+          }
+
+        } 
+        #expand-past-work:hover{
+          cursor: pointer;
+          p{
+            margin:0;
+            color: $black-blue;
+          }
+          .icon{
+            color: $black-blue;
+          }
+
         }
     }
   }
@@ -167,4 +192,16 @@ header{
       background-color: $section-background;
 
    }
+}
+footer{
+  padding: 3rem 0 1em 0;
+  p{
+    text-align: center;
+    margin: 0;
+    font-size: smaller;
+    opacity: .7;
+  }
+  #footer-icons{
+    text-align: center;
+  }
 }
