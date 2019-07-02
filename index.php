@@ -47,8 +47,7 @@
                       <h3>Hello</h3>
                       <p> My name is Ryan Fennell and I am a web developer living in the Baltimore area. 
                         I am a front-end developer with full stack leanings that would love to be a part of your team. I have over seven years of varied IT experience and have recently been pivoting back to a developer role 
-                          after spending over half a decade as a functional SAP consultant. One thing has become clear throughout my career: I like to get my hands dirty with code and create things 
-                          alongside other talented individuals.
+                          after spending over half a decade as a functional SAP consultant.
                         </p>  
                     <!-- </div> -->
                 </div>
@@ -64,9 +63,8 @@
                         </div>
                         <div class="past-work-section__description">
                           <p>
-                              I was brought on to consult on APO services while Air Products divested itself into the companies Versum and Evonik. 
-                              Soon I was also brought onto the data extraction team to help facilitate data transfer leading up to the 
-                              companies' separation. I was also part of the QA team and worked to create automated regression testing with Worksoft Certify.    
+                          At Air Products I had several roles including SAP APO consultant, data migration specialist and QA tester. 
+                          Duties included regression testing, documentation, client interaction and automated test setup via Worksoft Certify.   
                           </p>
                         </div>
                         <div class="experience__section__header">
@@ -81,6 +79,55 @@
                             of the system itself.
                           </p>
                       </div>
+                      <!-- hidden by default -->
+                      <div id="past-work-hidden">
+                          <div class="past-work-section__header">
+                            <h4 class="experience__section__header__title">TimFen Consulting Inc</h4>
+                            <p class="experience__section__header__dates">September 2012 - August 2014</p>
+                            <p class="past-work-title">Demand Planning Technical Analyst </p>
+                          </div>
+                          <div class="past-work-section__description">
+                              <p>
+                              My first SAP role, I was brought on for daily, remote maintenance and other SAP/Demand Planning roles. Duties included regression testing, background job 
+                              scheduling, technical documentation and the creation of job aides for the client.
+                              </p>
+                          </div>
+                          <div class="past-work-section__header">
+                            <h4 class="experience__section__header__title">Laurette University</h4>
+                            <p class="experience__section__header__dates">June 2012 - September 2012</p>
+                            <p class="past-work-title">Web Content Administrator  </p>
+                          </div>
+                          <div class="past-work-section__description">
+                              <p>
+                              At Laurette University I was part of a massive site migration for the online college, Walden University.
+                              Duties included editing and developing new content for the new Sitecore interface.
+                              </p>
+                          </div>
+                          <div class="past-work-section__header">
+                            <h4 class="experience__section__header__title">Stratus Interactive</h4>
+                            <p class="experience__section__header__dates">June 2012 - September 2012</p>
+                            <p class="past-work-title">Web Developer</p>
+                          </div>
+                          <div class="past-work-section__description">
+                              <p>
+                              At Stratus Interactive I was brought on to serve as a front-end developer, where I developed
+                              Wordpress content management systems alongside a team of designers and marketing specialists.
+                              </p>
+                          </div>
+                          <div class="past-work-section__header">
+                            <h4 class="experience__section__header__title">Tipping Point Media </h4>
+                            <p class="experience__section__header__dates">November 2011 - December 2011</p>
+                            <p class="past-work-title">Programmer</p>
+                          </div>
+                          <div class="past-work-section__description">
+                              <p>
+                                My first gig out of college, this was a short contract where I developed educational exercises that needed
+                                to be brought from Flash to HTML for browser compatibility.
+                              </p>
+                          </div>
+                          
+                      </div>
+                      <!-- end hidden -->
                       <div id="expand-past-work">
                         <p>See More</p>
                         <span class="icon"><i class="fas fa-caret-down"></i></span>
@@ -159,26 +206,41 @@
                   <h3>Projects</h3>
                   <div class="container-fluid" id="project__thumbnails">
                       <div class="row">
-                        <div class="col-lg-3 col-sm-12">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card">
+                            
+                              <div class="card__title">
+                                <p>Portfolio</p>
+                              </div>
+                              <div class="card-expand">
+                                <p class="card-expand__button">Click to See More</p>
+                              </div>
                             </div>
 
                         </div>
-                        <div class="col-lg-3 col-sm-12">
-                            <div class="card">
-                                
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card" id="thumb_eol">
+                              <img src="/images/thumbnail-eol.png"/>
+                              <div class="card__title">
+                                <p>Elixir of Life</p>
+                              </div>
+                              <div class="card-expand">
+                                <p class="card-expand__button">Click to See More</p>
+                              </div>
                             </div>
 
                         </div>
-                        <div class="col-lg-3 col-sm-12">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card">
-                                
+                              <div class="card-expand">Click to See More</div>
+
                             </div>
 
                         </div>
-                        <div class="col-lg-3 col-sm-12">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card">
-                                
+                              <div class="card-expand">Click to See More</div>
+
                             </div>
 
                         </div>

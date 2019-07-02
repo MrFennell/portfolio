@@ -123,7 +123,9 @@ header{
         border-radius: $section-border;
         padding: $section-padding;
         background-color: $section-background;
-
+        #past-work-hidden{
+          display: none;
+        }
         .experience__section__header__dates{
           font-size: smaller;
         }
@@ -177,8 +179,69 @@ header{
       margin: $section-content-margin;
       padding: $section-padding;
       background-color: $section-background;
+      #thumb_eol{
+        background-image: url(images/thumbnail-eol.png);
+      }
       .card{
         height: 200px;
+        position: relative;
+        overflow: hidden;
+        .card__title{
+          position: absolute;
+          // top: -34px;
+          transition: 0.5s;
+          height: 0;
+          text-align: center;
+          width: 100%;
+          margin: auto;
+         
+          background-color: $black-blue;
+          p{
+            font-size: large;
+            position: absolute;
+            bottom: 34px;
+            transition: 0.5s;
+            margin: auto;
+            padding: 0;
+            color: $white;
+            width: 100%
+          }
+
+        }
+        .card-expand{
+          position: absolute;
+          background-color: $green;
+          height: 0;
+          width: 100%;
+          margin: auto;
+          transition: 0.5s;
+          text-align: center;
+          bottom: 0;
+          .card-expand__button{
+            height: 20px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            background-color:$green;
+          }
+        }
+      }
+      .card:hover{
+        cursor: pointer;
+        .card__title{
+          // top: 10%;
+          height: 25%;
+          p{
+  
+            bottom: 10px;
+          }
+        }
+        .card-expand{
+          height: 75%;
+         
+        }
+
       }
    }
 }
