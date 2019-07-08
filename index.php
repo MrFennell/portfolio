@@ -7,13 +7,13 @@
     <title>Ryan Fennell</title>
     <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
     <!-- <link href="styles/fontawesome/all.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
    
   </head>
   <body>
       <header>
           <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#"><img src="/images/logo-cerulean.svg"/></a>
+          <a class="navbar-brand" href="#"><img src="images/logo-cerulean.svg"/></a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -220,7 +220,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card" id="thumb_eol">
-                              <img src="/images/thumbnail-eol.png"/>
+                              <img src="images/thumbnail-eol.png"/>
                               <div class="card__title">
                                 <p>Elixir of Life</p>
                               </div>
@@ -259,27 +259,36 @@
                           <p>Alternatively you can shoot me an email directly at ryan@fennellweb.com or you can find me at my <a href="https://www.linkedin.com/in/ryan-fennell-78704243/" >linkedIn</a>.</p>
                         </div>
                         <div class="col-md-6">
-                        <form method="POST" name="emailForm" action="email.php">
-                              <div class="form-group">
-                                <label for="exampleInputEmail1">Name</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" name="name" placeholder="Enter name">
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                              </div>
-                              <div class="form-group">
-                                  <label for="exampleInputEmail1">Message</label>
-                                  <textarea type="email" class="form-control" name="message" rows=3 placeholder="Compose your email here."></textarea>
-                              </div>
-                              <input type="submit" class="btn btn-primary" value="Submit">
-                              <input type="reset" class="btn btn-secondary" value="Reset">
+                          <!-- <form method="POST" name="emailForm" action="email.php"> -->
+                          <div id="mail-status"></div>
+                            <form name="contact" id="contactForm" action="">
+                                
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Name</label><span id="name-info" class="info"></span>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="subject">Subject</label><span id="subject-info" class="info"></span>
+                                    <input type="text" name="subject" placeholder="Let me know the subject of your email." class="form-control" id="subject" class="demoInputBox">
+                                  </div>
+                                  
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label><span id="email-info" class="info"></span>
+                                    <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email">
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label for="exampleInputEmail1">Message</label><span id="message-info" class="info"></span>
+                                      <textarea type="email" class="form-control" id="message" name="message" rows=3 placeholder="Compose your email here."></textarea>
+                                  </div>
+                                  <input type="button" id="formSubmit" class="btn btn-primary"  onClick="sendContact();" value="Submit">
+                                  <input type="reset" class="btn btn-secondary" value="Reset">
                             </form>
-                        </div>
+                          </div>
                       </div>
                     </div>
           </section>
-      </main>
       <footer>
         <p>2019 Ryan Fennell</p>
         <div id="footer-icons">
@@ -290,10 +299,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="/scripts/jquery.waypoints.js"></script>
-    <script src="/scripts/animation.js"></script>
-
-    <script src="/scripts/fontawesome/all.js"></script>
+    <script src="scripts/jquery.waypoints.js"></script>
+    <script src="scripts/animation.js"></script>
+    <script src="scripts/email.js"></script>
+    <script src="scripts/fontawesome/all.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
