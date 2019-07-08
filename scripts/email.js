@@ -1,6 +1,8 @@
 function sendContact() {
+    
     var valid;	
     valid = validateContact();
+    
     if(valid) {
         jQuery.ajax({
             url: "email.php",
@@ -19,7 +21,7 @@ function sendContact() {
 }
 function validateContact() {
   var valid = true;	
-  $(".demoInputBox").css('background-color','');
+  $(".form-control").css('background-color','#fff');
   $(".info").html('');
   if(!$("#name").val()) {
       $("#name-info").html(" (required)");

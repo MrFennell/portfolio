@@ -124,7 +124,13 @@ header{
         padding: $section-padding;
         background-color: $section-background;
         #past-work-hidden{
-          display: none;
+          max-height: 0px;
+          overflow: hidden;
+          transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+        } 
+        #past-work-hidden.show{
+          max-height: 100%;
+          transition: max-height 0.3s ease-in-out;
         }
         .experience__section__header__dates{
           font-size: smaller;
