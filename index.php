@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>Ryan Fennell</title>
     <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
     <!-- <link href="styles/fontawesome/all.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/styles/main.css">
    
   </head>
   <body>
       <header>
           <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#"><img src="images/logo-cerulean.svg"/></a>
+          <a class="navbar-brand" href="#"><img src="/images/logo-cerulean.svg"/></a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,15 +44,13 @@
         <section id="about" class="row">
             <div class="col">
               <section id="hello" class="row">
-                  <!-- <div class="col-12"> -->
                     <div class="hello__section">
                       <h3>Hello</h3>
                       <p> My name is Ryan Fennell and I am a web developer living in the Baltimore area. 
                         I am a front-end developer with full stack leanings that would love to be a part of your team. I have over seven years of varied IT experience and have recently been pivoting back to a developer role 
                           after spending over half a decade as a functional SAP consultant.
                         </p>  
-                    <!-- </div> -->
-                </div>
+                    </div>
               </section>
               <section id="experience" class="row justify-content-between">
                 <div class="col-md-6">
@@ -131,8 +129,14 @@
                       </div>
                       <!-- end hidden -->
                       <div id="expand-past-work">
-                        <p>See More</p>
-                        <span class="icon"><i class="fas fa-caret-down"></i></span>
+                        <div id="expand-past-work-see-more">
+                          <p>See More</p>
+                          <span class="icon"><i class="fas fa-caret-down"></i></span>
+                        </div>
+                        <div id="expand-past-work-see-less">
+                          <p>See Less</p>
+                          <span class="icon"><i class="fas fa-caret-up"></i></span>
+                        </div>
                       </div>  
 
                   </div>
@@ -302,18 +306,12 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="scripts/jquery.waypoints.js"></script>
-    <script src="scripts/animation.js"></script>
-    <script src="scripts/email.js"></script>
-    <script src="scripts/fontawesome/all.js"></script>
-    <script>
-        $(function(){
-          $('#expand-past-work').click(function(ev){
-            $('#past-work-hidden').toggleClass('show');
-          });
-        });
-                      
-        </script>
+    <script src="/scripts/jquery.waypoints.js"></script>
+    <script src="/scripts/animation.js"></script>
+    <script src="/scripts/email.js"></script>
+    <script src="/scripts/fontawesome/all.js"></script>
+    <script src="/scripts/interactivity.js"></script>
+    
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     

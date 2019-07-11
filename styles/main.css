@@ -123,13 +123,15 @@ header #wrapper #wrapper-inner {
   transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
 }
 #about #experience .experience__section #past-work-hidden.show {
-  max-height: 100%;
+  max-height: 1000px;
+  height: 100%;
   transition: max-height 0.3s ease-in-out;
 }
 #about #experience .experience__section .experience__section__header__dates {
   font-size: smaller;
 }
 #about #experience .experience__section #expand-past-work {
+  transition: 0.2s;
   text-align: center;
   padding-top: 1em;
   height: 64px;
@@ -144,6 +146,18 @@ header #wrapper #wrapper-inner {
   position: relative;
   top: -22px;
   transition: 0.2s;
+}
+#about #experience .experience__section #expand-past-work #expand-past-work-see-less {
+  display: none;
+}
+#about #experience .experience__section #expand-past-work.seeMore {
+  transition: 0.2s;
+}
+#about #experience .experience__section #expand-past-work.seeMore #expand-past-work-see-more {
+  display: none;
+}
+#about #experience .experience__section #expand-past-work.seeMore #expand-past-work-see-less {
+  display: block;
 }
 #about #experience .experience__section #expand-past-work:hover {
   cursor: pointer;
