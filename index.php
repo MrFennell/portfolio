@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
     <!-- <link href="styles/fontawesome/all.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="/styles/main.css">
-   
   </head>
   <body>
       <header>
@@ -210,12 +209,108 @@
           </section>
           <section id="projects" class="row">
               <div id="projects__content" class="container-fluid">
+                  <!-- Modals -->
+                  <div class="modal fade portfolio-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="portfolio" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">Portfolio</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid">
+                            <div class="project-gallery">
+                            <input type="reset" class="btn btn-secondary" value="Reset">
+                            <input type="reset" class="btn btn-secondary" value="Reset">
+                            <input type="reset" class="btn btn-secondary" value="Reset">
+                            </div>
+                            <div class="project-goals">
+                              <p class="project-header">Goals:</p>
+                              <p>The goal of this project was to both provide an advertisement for 
+                                myself and to practice making a relatively simple webpage.</p>
+                            </div>
+                            <div class="project-process">
+                              <p class="project-header">Process:</p>
+                                <p>I knew I wanted to make a simple site and it seemed like overkill to use any sort of JavaScript frameworks. 
+                                  Instead I opted to refresh myself on jQuery, which may be ‘old-school’ at this point but given how many sites 
+                                  still use it I felt it was important to relearn. For the fancy logo animation I used anime.js. 
+                                  The email form served as a quick PHP refresher. I also felt it was important to further familiarize 
+                                  myself with the Bootstrap framework. </p>
+                                  <p>I initially outlined my design in Photoshop and used Illustrator to make the .svg elements. Lately I had been testing my sites in node.js,
+                                    but as it lacks php functionality I refreshed myself on setting up a local xammp environment for this project.
+                                  </p>
+                            </div>
+                            <div class="project-tech">
+                              <p class="project-header">Technologies used:</p>
+                              <p>Photoshop, Illustrator, jQuery, jQuery Waypoints, Bootstrap, anime.js, PHP, Xammp </p>
+                            </div>
+
+                            <div class="project-link">
+                              <p class="project-header">Link: (not needed)</p>
+                              
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade elixir-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="portfolio" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">Elixir of Life</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid">
+                            <div class="project-gallery">
+
+                            </div>
+                            <div class="project-goals">
+                              <p class="project-header">Goals:</p>
+                              <p>This was one of my first projects in the FreeCodeCamp front-end course, where the goal was to make a product landing page. I decided to flex my dumb sense of humor and make a page selling an elixir of immortality where the content would get more sinister as it went on.
+                                 This would serve as a good refresher on basic html and css as well as an introduction to Bootstrap.</p>
+                            </div>
+                            <div class="project-process">
+                              <p class="project-header">Process:</p>
+                                <p>
+                                This was my first real site in a LONG time, and it went through several iterations before I was satisfied with how it looked. As usual I used Photoshop and Illustrator for design elements. One goal I had was to get a better handle on CSS3 flex, which eventually led to me trying out Bootstrap. I set up a quick dev environment in node.js to test out everything locally. 
+                                It ended up being a great refresher on responsive design and intuitive layouts.
+                                </p>
+                            </div>
+                            <div class="project-tech">
+                              <p class="project-header">Technologies used:</p>
+                              <p>HTML, CSS, Bootstrap, Photoshop, Illustrator</p>
+                            </div>
+
+                            <div class="project-link">
+                              <p class="project-header">Link: <a href="https://www.fennellweb.com/sites/elixir-of-life" >live</a></p>
+                              
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <!-- End Modals -->
                   <h3>Projects</h3>
                   <div class="container-fluid" id="project__thumbnails">
                       <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card">
-                            
+                            <div class="card" data-toggle="modal" data-target=".portfolio-modal">
                               <div class="card__title">
                                 <p>Portfolio</p>
                               </div>
@@ -226,7 +321,7 @@
 
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card" id="thumb_eol">
+                        <div class="card" id="thumb_eol" data-toggle="modal" data-target=".elixir-modal">
                               <img src="images/thumbnail-eol.png"/>
                               <div class="card__title">
                                 <p>Elixir of Life</p>
@@ -310,10 +405,13 @@
     <script src="/scripts/animation.js"></script>
     <script src="/scripts/email.js"></script>
     <script src="/scripts/fontawesome/all.js"></script>
-    <script src="/scripts/interactivity.js"></script>
+   
     
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
+    <script src="/scripts/interactivity.js"></script>
+
+   
   </body>
 </html>
