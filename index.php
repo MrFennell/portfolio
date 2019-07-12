@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>Ryan Fennell</title>
     <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
-    <!-- <link href="styles/fontawesome/all.css" rel="stylesheet"> -->
+    
+    <link rel="stylesheet" href="/styles/swiper/swiper.min.css">
     <link rel="stylesheet" href="/styles/main.css">
   </head>
   <body>
@@ -23,8 +24,8 @@
                 <li class="nav-item text-center"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item text-center"><a class="nav-link" href="#projects">Projects</a></li>
                 <li class="nav-item text-center"><a class="nav-link" href="#contact">Contact</a></li>
-                <li class="nav-item text-center"><a class="nav-link" href="#" >Resume</a></li>
-                <li class="nav-item text-center"><a class="nav-link" href="https://github.com/MrFennell">Github</a></li>
+                <li class="nav-item text-center"><a class="nav-link" target="_blank" href="#" >Resume</a></li>
+                <li class="nav-item text-center"><a class="nav-link" target="_blank" href="https://github.com/MrFennell">Github</a></li>
               </ul>
             </div>
           </nav>
@@ -210,7 +211,7 @@
           <section id="projects" class="row">
               <div id="projects__content" class="container-fluid">
                   <!-- Modals -->
-                  <div class="modal fade portfolio-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="portfolio" aria-hidden="true">
+                  <div class="modal fade portfolio-modal" id="modal-portfolio" tabindex="-1" role="dialog" aria-labelledby="portfolio" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
@@ -220,11 +221,13 @@
                           </button>
                         </div>
                         <div class="modal-body">
-                          <div class="container-fluid">
-                            <div class="project-gallery">
-                            <input type="reset" class="btn btn-secondary" value="Reset">
-                            <input type="reset" class="btn btn-secondary" value="Reset">
-                            <input type="reset" class="btn btn-secondary" value="Reset">
+                            <div class="swiper-container swiper-container-portfolio">
+                               <div class="swiper-wrapper">
+                                  <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
+                                  <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
+                                  <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
+                                </div>
+                                <div class="swiper-pagination swiper-pagination-portfolio"></div>
                             </div>
                             <div class="project-goals">
                               <p class="project-header">Goals:</p>
@@ -251,8 +254,6 @@
                               <p class="project-header">Link: (not needed)</p>
                               
                             </div>
-                          </div>
-                        
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -260,8 +261,7 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="modal fade elixir-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="portfolio" aria-hidden="true">
+                  <div class="modal fade elixir-modal" id="modal-elixir" tabindex="-1" role="dialog" aria-labelledby="portfolio" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
@@ -271,9 +271,13 @@
                           </button>
                         </div>
                         <div class="modal-body">
-                          <div class="container-fluid">
-                            <div class="project-gallery">
-
+                        <div class="swiper-container swiper-container-elixir">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
+                                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
+                                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
+                              </div>
+                                <div class="swiper-pagination swiper-pagination-elixir"></div>
                             </div>
                             <div class="project-goals">
                               <p class="project-header">Goals:</p>
@@ -289,7 +293,7 @@
                             </div>
                             <div class="project-tech">
                               <p class="project-header">Technologies used:</p>
-                              <p>HTML, CSS, Bootstrap, Photoshop, Illustrator</p>
+                              <p>HTML, CSS, JavaScript, Bootstrap, Photoshop, Illustrator</p>
                             </div>
 
                             <div class="project-link">
@@ -298,7 +302,6 @@
                             </div>
                           </div>
                         
-                        </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
@@ -310,7 +313,8 @@
                   <div class="container-fluid" id="project__thumbnails">
                       <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target=".portfolio-modal">
+                            <div class="card" data-toggle="modal" id="portfolio" data-target=".portfolio-modal">
+                            <!-- <div class="card" id="portfolio">  -->
                               <div class="card__title">
                                 <p>Portfolio</p>
                               </div>
@@ -318,11 +322,10 @@
                                 <p class="card-expand__button">Click to See More</p>
                               </div>
                             </div>
-
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card" id="thumb_eol" data-toggle="modal" data-target=".elixir-modal">
-                              <img src="images/thumbnail-eol.png"/>
+                          <div class="card" id="elixir" data-toggle="modal" data-target=".elixir-modal">
+                              
                               <div class="card__title">
                                 <p>Elixir of Life</p>
                               </div>
@@ -331,7 +334,7 @@
                               </div>
                             </div>
 
-                        </div>
+                          </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card">
                               <div class="card-expand">Click to See More</div>
@@ -409,9 +412,27 @@
     
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    <script src="/scripts/swiper/swiper.min.js"></script>
+   
     <script src="/scripts/interactivity.js"></script>
-
+    <!-- <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows : true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+  </script> -->
    
   </body>
 </html>
