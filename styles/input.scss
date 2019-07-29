@@ -19,9 +19,6 @@ body{
 .container-fluid {
    padding: 0px;
 }
-.row {
-  margin: 0;
-}
 h1, h2, p{
     font-family: 'Arimo', sans-serif;
 }
@@ -111,7 +108,7 @@ header{
     padding: 3rem 0 3rem 0;
   #hello{
     // margin: $section-content-margin ;
-    .hello__section{
+    #hello__section{
         padding: $section-padding;
         border-radius: $section-border;
         background-color: $section-background;
@@ -244,6 +241,9 @@ header{
             background-color:$green;
           }
         }
+      }
+      #portfolio.card{
+        background-image: url("https://www.fennellweb.com/sites/portfolio/images/projects/portfolio/port_thumb.PNG")
       }
       .card:hover{
         cursor: pointer;

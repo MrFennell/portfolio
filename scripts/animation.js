@@ -1,16 +1,16 @@
 $(document).ready(function(){
     
-      $('#subtitle').css({'opacity':0}).animate({
-          'opacity':1
-        },{
-            duration: 1200
-        });
-   
+    $('#subtitle').css({'opacity':0}).animate({
+        'opacity':1
+    },{
+        duration: 1200
+    });
+
     //turn h1 to opaque before running animation    
     $('h1').css({'opacity':0}).animate({
             'opacity':1
           },{
-              duration: 1
+              duration: 0
           });
      
     $('.h1Anime .letters').each(function(){

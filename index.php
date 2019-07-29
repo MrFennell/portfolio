@@ -44,7 +44,7 @@
         <section id="about" class="row">
             <div class="col">
               <section id="hello" class="row">
-                    <div class="hello__section">
+                    <div id="hello__section" class="col">
                       <h3>Hello</h3>
                       <p> My name is Ryan Fennell and I am a web developer living in the Baltimore area. 
                         I am a front-end developer with full stack leanings that would love to be a part of your team. I have over seven years of varied IT experience and have recently been pivoting back to a developer role 

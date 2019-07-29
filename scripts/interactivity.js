@@ -9,7 +9,8 @@ $(document).ready(function(){
     
     $(modalName).modal("show");
     $(modalGalleryId).on('shown.bs.modal', function(){
-      let swiper = new Swiper(swiperContainerName, {
+    
+    let mySwiper = new Swiper(swiperContainerName, {
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
@@ -26,7 +27,9 @@ $(document).ready(function(){
               el: swiperPaginationName,
             },
           });
+
       });
+      
     });
 });
 
