@@ -52,7 +52,7 @@
                         </p>  
                     </div>
               </section>
-              <section id="experience" class="row justify-content-between">
+              <section id="experience" class="row">
                 <div class="col-md-6">
                   <div class="experience__section">
                       <h3>Past Work</h3>
@@ -168,40 +168,38 @@
                   </div>
                   <div class="row">
                       <div class="col-sm">
-                          <div class="container-fluid">
-                              <div class="experience__section" id="technology__section">
-                                  <h3>Technologies I use:</h3>
-                                  <div class="row">
-                                    <div class="col">
-                                        <span class="icon" alt="javascript"><i class="fab fa-js"></i></span>
-                                    </div>
-                                    <div class="col">
-                                        <span class="icon" alt="html5"><i class="fab fa-html5"></i></span>
-                                    </div>
-                                    <div class="col">
-                                        <span class="icon" alt="css3"><i class="fab fa-css3"></i></span>
-                                    </div>
-                                    <div class="col">
-                                        <span class="icon" alt="vue-js"><i class="fab fa-vuejs"></i></span>
-                                    </div>
-                                    <div class="col">
-                                        <span class="icon" alt="node-js"><i class="fab fa-node-js"></i></span>
-                                    </div>
-                                    <div class="col">
-                                        <span class="icon" alt="npm"><i class="fab fa-npm"></i></span>
-                                    </div>
-                                    <div class="col">
-                                        <span class="icon" alt="Adobe Photoshop and Illustrator"><i class="fab fa-adobe"></i></span>
-                                    </div>
-                                    <div class="col">
-                                        <span class="icon" alt="git"><i class="fab fa-git"></i></span>
-                                    </div>
-                                    <!-- <div class="col">
-                                        <span class="icon" alt="Wordpress"><i class="fab fa-wordpress"></i></span>
-                                    </div> -->
+                          <div class="experience__section" id="technology__section">
+                              <h3>Technologies I use:</h3>
+                              <div class="row">
+                                <div class="col">
+                                    <span class="icon" alt="javascript"><i class="fab fa-js"></i></span>
                                 </div>
-                            </div>  
-                          </div>
+                                <div class="col">
+                                    <span class="icon" alt="html5"><i class="fab fa-html5"></i></span>
+                                </div>
+                                <div class="col">
+                                    <span class="icon" alt="css3"><i class="fab fa-css3"></i></span>
+                                </div>
+                                <div class="col">
+                                    <span class="icon" alt="vue-js"><i class="fab fa-vuejs"></i></span>
+                                </div>
+                                <div class="col">
+                                    <span class="icon" alt="node-js"><i class="fab fa-node-js"></i></span>
+                                </div>
+                                <div class="col">
+                                    <span class="icon" alt="npm"><i class="fab fa-npm"></i></span>
+                                </div>
+                                <div class="col">
+                                    <span class="icon" alt="Adobe Photoshop and Illustrator"><i class="fab fa-adobe"></i></span>
+                                </div>
+                                <div class="col">
+                                    <span class="icon" alt="git"><i class="fab fa-git"></i></span>
+                                </div>
+                                <!-- <div class="col">
+                                    <span class="icon" alt="Wordpress"><i class="fab fa-wordpress"></i></span>
+                                </div> -->
+                            </div>
+                        </div>  
                       </div>
                     </div>  
                   </div>
@@ -261,6 +259,58 @@
                       </div>
                     </div>
                   </div>
+                  <div class="modal fade weather-modal" id="modal-weather" tabindex="-1" role="dialog" aria-labelledby="weather" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">WeatherApp</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                        <div class="swiper-container swiper-container-weather">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="background-image:url(https://www.fennellweb.com/images/projects/weather/thumb-1.png)"></div>
+                                <div class="swiper-slide" style="background-image:url(https://www.fennellweb.com/images/projects/weather/thumb-2.png)"></div>
+                                <div class="swiper-slide" style="background-image:url(https://www.fennellweb.com/images/projects/weather/thumb-3.png3)"></div>
+                              </div>
+                                <div class="swiper-pagination swiper-pagination-weather"></div>
+                            </div>
+                            <div class="project-goals">
+                              <p class="project-header">Goals:</p>
+                              <p>
+                              The goal of this project was to make an application that would pull the weather forecast from openweathermap.org’s API and then create charts and lists of the forecasted data. 
+                              Users can also search for other locations and pick the units of measure. Created with a Vue frontend and Node Js backend.
+                              </p>
+                            </div>
+                            <div class="project-process">
+                              <p class="project-header">Process:</p>
+                                <p>
+                                The ol’ weather application is a classic when it comes to developers working with APIs and I was interested in being able to manipulate data into different visual components. For this project I ended up using openweathermap.org’s free API for the weather data and ip-api.com to retrieve the users' geolocation data. 
+                                To get both the current weather and the five-day forecast I had to make two API calls and then combine the 
+                                data to send back to be stored in the Vuex front-end. 
+                                </p>
+                                </p>
+                                I found setting up the charts to be surprising tricky but it served as a great introduction to rendering data after the initial component creation. Also, because the forecast data is served sequentially in 40 three-hour chunks I was able to flex my javascript muscles in order to parse the data into days for display. I was also able to get experience with filtering data for date and unit-of-measure display, as well as create some transition and animation effects.
+                                </p>
+                            </div>
+                            <div class="project-tech">
+                              <p class="project-header">Technologies used:</p>
+                              <p>Vue, Vuex, NodeJs, JavaScript, Bootstrap, Photoshop, Illustrator</p>
+                            </div>
+
+                            <div class="project-link">
+                              <p class="project-header">Link: <a href="https://weather.fennellweb.com/" >live</a></p>
+                            </div>
+                          </div>
+                        
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="modal fade elixir-modal" id="modal-elixir" tabindex="-1" role="dialog" aria-labelledby="portfolio" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                       <div class="modal-content">
@@ -313,8 +363,7 @@
                   <div class="container-fluid" id="project__thumbnails">
                       <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card" data-toggle="modal" id="portfolio" data-target=".portfolio-modal">
-                            <!-- <div class="card" id="portfolio">  -->
+                            <div class="card" data-toggle="modal" id="portfolio" data-target=".portfolio-modal" >
                               <div class="card__title">
                                 <p>Portfolio</p>
                               </div>
@@ -324,8 +373,18 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card" id="weather" data-toggle="modal" data-target=".weather-modal">
+                            <div class="card__title">
+                              <p>WeatherApp</p>
+                            </div>
+                            <div class="card-expand">
+                                <p class="card-expand__button">Click to See More</p>
+                            </div>
+                        </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                           <div class="card" id="elixir" data-toggle="modal" data-target=".elixir-modal">
-                              
                               <div class="card__title">
                                 <p>Elixir of Life</p>
                               </div>
@@ -335,13 +394,7 @@
                             </div>
 
                           </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card">
-                              <div class="card-expand">Click to See More</div>
-
-                            </div>
-
-                        </div>
+                        
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card">
                               <div class="card-expand">Click to See More</div>
@@ -415,24 +468,6 @@
     <script src="/scripts/swiper/swiper.min.js"></script>
    
     <script src="/scripts/interactivity.js"></script>
-    <!-- <script>
-      var swiper = new Swiper('.swiper-container', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows : true,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      });
-  </script> -->
    
   </body>
 </html>

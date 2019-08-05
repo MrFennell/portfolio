@@ -4,13 +4,6 @@ html {
 
 body {
   background-color: #FEFCFB;
-}
-
-.container-fluid {
-  padding: 0px;
-}
-
-h1, h2, p {
   font-family: "Arimo", sans-serif;
 }
 
@@ -45,6 +38,16 @@ h2 {
   font-size: 2vw;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 15vw;
+  }
+
+  h2 {
+    margin-top: -8vw;
+    font-size: 4vw;
+  }
+}
 #subtitle {
   opacity: 0;
 }
@@ -72,6 +75,11 @@ header #wrapper #wrapper-inner {
   display: inline-block;
 }
 
+@media (max-width: 768px) {
+  header #wrapper {
+    padding-top: 40vh;
+  }
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -79,6 +87,7 @@ header #wrapper #wrapper-inner {
   z-index: 1030;
   background-color: #FEFCFB;
   width: 100%;
+  padding: 8px 44px;
 }
 
 .h1Anime {
@@ -101,7 +110,10 @@ header #wrapper #wrapper-inner {
 
 #about {
   background-color: #0A1128;
-  padding: 3rem 0 3rem 0;
+  padding: 3rem 3rem 3rem 3rem;
+}
+#about #hello {
+  margin-bottom: 22px;
 }
 #about #hello #hello__section {
   padding: 22px 22px 22px 22px;
@@ -179,17 +191,19 @@ header #wrapper #wrapper-inner {
 }
 #projects #projects__content {
   border-radius: 3px;
-  margin: 22px 3% 0 3%;
+  margin: 22px 22px 0 22px;
   padding: 22px 22px 22px 22px;
   background-color: #FEFCFB;
-}
-#projects #projects__content #thumb_eol {
-  background-image: url(images/thumbnail-eol.png);
 }
 #projects #projects__content .card {
   height: 200px;
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #dedddc;
+  margin-top: 2em;
 }
 #projects #projects__content .card .card__title {
   position: absolute;
@@ -231,6 +245,9 @@ header #wrapper #wrapper-inner {
 #projects #projects__content #portfolio.card {
   background-image: url("https://www.fennellweb.com/sites/portfolio/images/projects/portfolio/port_thumb.PNG");
 }
+#projects #projects__content #weather.card {
+  background-image: url("https://www.fennellweb.com/images/projects/weather/thumb-1.png");
+}
 #projects #projects__content .card:hover {
   cursor: pointer;
 }
@@ -254,7 +271,7 @@ header #wrapper #wrapper-inner {
 }
 #contact #contact__content {
   border-radius: 3px;
-  margin: 22px 3% 0 3%;
+  margin: 22px 22px 0 22px;
   padding: 22px 22px 22px 22px;
   background-color: #FEFCFB;
 }
