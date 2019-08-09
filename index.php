@@ -44,17 +44,19 @@
         <section id="about" class="row">
             <div class="col">
               <section id="hello" class="row">
-                    <div id="hello__section" class="col">
-                      <h3>Hello</h3>
-                      <p> My name is Ryan Fennell and I am a web developer living in the Baltimore area. 
-                        I am a front-end developer with full stack leanings that would love to be a part of your team. I have over seven years of varied IT experience and have recently been pivoting back to a developer role 
-                          after spending over half a decade as a functional SAP consultant.
-                        </p>  
-                    </div>
+                <div class="col"> 
+                  <div id="hello__section">
+                    <h3>Hello</h3>
+                    <p> My name is Ryan Fennell and I am a front-end web developer living in the Baltimore area. 
+                      I have over seven years of varied IT experience and have recently been pivoting back to a developer role 
+                        after spending over half a decade as a functional SAP consultant.
+                    </p>  
+                  </div>
+                </div>
               </section>
               <section id="experience" class="row">
                 <div class="col-md-6">
-                  <div class="experience__section">
+                  <div id="past__work" class="experience__section">
                       <h3>Past Work</h3>
                         <div class="past-work-section__header">
                           <h4 class="experience__section__header__title">Air Products</h4>
@@ -362,6 +364,19 @@
                   <h3>Projects</h3>
                   <div class="container-fluid" id="project__thumbnails">
                       <div class="row">
+                        
+                        
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                          <div class="card" id="weather" data-toggle="modal" data-target=".weather-modal">
+                            <div class="card__title">
+                              <p>WeatherApp</p>
+                            </div>
+                            <div class="card-expand">
+                                <p class="card-expand__button">Click to See More</p>
+                            </div>
+                          </div>
+                        </div>
+
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card" data-toggle="modal" id="portfolio" data-target=".portfolio-modal" >
                               <div class="card__title">
@@ -372,17 +387,7 @@
                               </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card" id="weather" data-toggle="modal" data-target=".weather-modal">
-                            <div class="card__title">
-                              <p>WeatherApp</p>
-                            </div>
-                            <div class="card-expand">
-                                <p class="card-expand__button">Click to See More</p>
-                            </div>
-                        </div>
 
-                        </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                           <div class="card" id="elixir" data-toggle="modal" data-target=".elixir-modal">
                               <div class="card__title">
@@ -398,7 +403,6 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card">
                               <div class="card-expand">Click to See More</div>
-
                             </div>
 
                         </div>
@@ -417,13 +421,12 @@
                           <p>Alternatively you can shoot me an email directly at ryan@fennellweb.com or you can find me at my <a href="https://www.linkedin.com/in/ryan-fennell-78704243/" >linkedIn</a>.</p>
                         </div>
                         <div class="col-md-6">
-                          <!-- <form method="POST" name="emailForm" action="email.php"> -->
                           <div id="mail-status"></div>
                             <form name="contact" id="contactForm" action="">
                                 
                                   <div class="form-group">
                                     <label for="exampleInputEmail1">Name</label><span id="name-info" class="info"></span>
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name.">
                                   </div>
 
                                   <div class="form-group">
@@ -433,12 +436,12 @@
                                   
                                   <div class="form-group">
                                     <label for="exampleInputEmail1">Email address</label><span id="email-info" class="info"></span>
-                                    <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email">
+                                    <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Your email address goes here.">
                                   </div>
 
                                   <div class="form-group">
                                       <label for="exampleInputEmail1">Message</label><span id="message-info" class="info"></span>
-                                      <textarea type="email" class="form-control" id="message" name="message" rows=3 placeholder="Compose your email here."></textarea>
+                                      <textarea type="email" class="form-control" id="message" name="message" rows=3 placeholder="Compose your email here. Please give me as many details as possible!"></textarea>
                                   </div>
                                   <input type="button" id="formSubmit" class="btn btn-primary"  onClick="sendContact();" value="Submit">
                                   <input type="reset" class="btn btn-secondary" value="Reset">

@@ -110,7 +110,7 @@ header #wrapper #wrapper-inner {
 
 #about {
   background-color: #0A1128;
-  padding: 3rem 3rem 3rem 3rem;
+  padding: 37px 22px 22px 22px;
 }
 #about #hello {
   margin-bottom: 22px;
@@ -124,6 +124,7 @@ header #wrapper #wrapper-inner {
   border-radius: 3px;
   padding: 22px 22px 22px 22px;
   background-color: #FEFCFB;
+  margin-bottom: 22px;
 }
 #about #experience .experience__section #past-work-hidden {
   max-height: 0px;
@@ -176,9 +177,6 @@ header #wrapper #wrapper-inner {
 }
 #about #experience .experience__section #expand-past-work:hover .icon {
   color: #0A1128;
-}
-#about #technology__section {
-  margin-top: 22px;
 }
 
 .icon {

@@ -114,7 +114,7 @@ header{
 // }
 #about{
     background-color: $black-blue;
-    padding: 3rem 3rem 3rem 3rem;
+    padding: 37px 22px 22px 22px;
   #hello{
     margin-bottom: 22px;
     #hello__section{
@@ -123,11 +123,15 @@ header{
         background-color: $section-background;
     }
   }
+  // #past__work{
+  //   margin-bottom: 22px;
+  // }
   #experience{
     .experience__section{
         border-radius: $section-border;
         padding: $section-padding;
         background-color: $section-background;
+        margin-bottom: 22px;
         #past-work-hidden{
           max-height: 0px;
           overflow: hidden;
@@ -183,9 +187,6 @@ header{
 
         }
     }
-  }
-  #technology__section{
-      margin-top:22px;
   }
 }
 .icon{
