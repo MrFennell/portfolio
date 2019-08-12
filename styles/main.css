@@ -246,6 +246,12 @@ header #wrapper #wrapper-inner {
 #projects #projects__content #weather.card {
   background-image: url("https://www.fennellweb.com/images/projects/weather/thumb-1.png");
 }
+#projects #projects__content #elixir.card {
+  background-image: url("https://www.fennellweb.com/sites/portfolio/images/projects/elixir/thumb-01.PNG");
+}
+#projects #projects__content #campaign.card {
+  background-image: url("https://www.fennellweb.com/sites/portfolio/images/projects/campaign/thumb-4.png");
+}
 #projects #projects__content .card:hover {
   cursor: pointer;
 }

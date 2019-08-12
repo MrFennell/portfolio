@@ -4,30 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>Ryan Fennell</title>
     <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="/styles/swiper/swiper.min.css">
     <link rel="stylesheet" href="/styles/main.css">
   </head>
   <body>
       <header>
           <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#"><img src="/images/logo-cerulean.svg"/></a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item text-center"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item text-center"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item text-center"><a class="nav-link" href="#contact">Contact</a></li>
-                <li class="nav-item text-center"><a class="nav-link" target="_blank" href="#" >Resume</a></li>
-                <li class="nav-item text-center"><a class="nav-link" target="_blank" href="https://github.com/MrFennell">Github</a></li>
-              </ul>
-            </div>
+            <a class="navbar-brand" href="#"><img src="/images/logo-cerulean.svg"/></a>
+              <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item text-center"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" href="#projects">Projects</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" href="#contact">Contact</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" target="_blank" href="https://www.fennellweb.com/Ryan_Fennell_Resume.pdf" >Resume</a></li>
+                  <li class="nav-item text-center"><a class="nav-link" target="_blank" href="https://github.com/MrFennell">Github</a></li>
+                </ul>
+              </div>
           </nav>
          <div id="wrapper">    
             <div id="wrapper-inner">
@@ -223,9 +222,9 @@
                         <div class="modal-body">
                             <div class="swiper-container swiper-container-portfolio">
                                <div class="swiper-wrapper">
-                                  <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
-                                  <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
-                                  <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
+                                  <div class="swiper-slide" style="background-image:url(https://www.fennellweb.com/sites/portfolio/images/projects/portfolio/thumb-1.png)"></div>
+                                  <div class="swiper-slide" style="background-image:url(https://www.fennellweb.com/sites/portfolio/images/projects/portfolio/thumb-2.png)"></div>
+                                  <div class="swiper-slide" style="background-image:url(https://www.fennellweb.com/sites/portfolio/images/projects/portfolio/thumb-3.png)"></div>
                                 </div>
                                 <div class="swiper-pagination swiper-pagination-portfolio"></div>
                             </div>
@@ -277,7 +276,7 @@
                                 <div class="swiper-slide" style="background-image:url(https://www.fennellweb.com/images/projects/weather/thumb-2.png)"></div>
                                 <div class="swiper-slide" style="background-image:url(https://www.fennellweb.com/images/projects/weather/thumb-3.png3)"></div>
                               </div>
-                                <div class="swiper-pagination swiper-pagination-weather"></div>
+                                
                             </div>
                             <div class="project-goals">
                               <p class="project-header">Goals:</p>
@@ -325,11 +324,11 @@
                         <div class="modal-body">
                         <div class="swiper-container swiper-container-elixir">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
-                                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
-                                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
-                              </div>
-                                <div class="swiper-pagination swiper-pagination-elixir"></div>
+                              <div class="swiper-slide" style="background-image:url(https://www.fennellweb.com/sites/portfolio/images/projects/elixir/thumb-01.PNG)"></div>
+                              <div class="swiper-slide" style="background-image:url(https://www.fennellweb.com/sites/portfolio/images/projects/elixir/thumb-02.PNG)"></div>
+                              <div class="swiper-slide" style="background-image:url(https://www.fennellweb.com/sites/portfolio/images/projects/elixir/thumb-03.PNG)"></div>
+                            </div>
+                                
                             </div>
                             <div class="project-goals">
                               <p class="project-header">Goals:</p>
@@ -350,7 +349,53 @@
 
                             <div class="project-link">
                               <p class="project-header">Link: <a href="https://www.fennellweb.com/sites/elixir-of-life" >live</a></p>
-                              
+                            </div>
+                          </div>
+                        
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade campaign-modal" id="modal-campaign" tabindex="-1" role="dialog" aria-labelledby="portfolio" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">Campaign Tracker</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                        <div class="swiper-container swiper-container-campaign">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide" style="background-image:url(https://www.fennellweb.com/sites/portfolio/images/projects/campaign/thumb-1.png)"></div>
+                              <div class="swiper-slide" style="background-image:url(https://www.fennellweb.com/sites/portfolio/images/projects/campaign/thumb-2.png)"></div>
+                              <div class="swiper-slide" style="background-image:url(https://www.fennellweb.com/sites/portfolio/images/projects/campaign/thumb-3.png)"></div>
+                            </div>
+                                
+                            </div>
+                            <div class="project-goals">
+                              <p class="project-header">Goals:</p>
+                              <p>The goal of this project was to create a CRUD application that could help me and my wife organize data that we use for our tabletop campaigns. 
+                              It would need a frontend that could dynamically update and a backend that can store users, objects and images.</p>
+                            </div>
+                            <div class="project-process">
+                              <p class="project-header">Process:</p>
+                                <p>
+                                This was the first real project I had after attending a Full Stack bootcamp and it ended up being quite a lot of work and a fantastic learning experience that I am still improving on. I used NodeJs, Sequelize and Postgres to create an API that could asynchronously load and update data from the front-end. The front-end in turn is built with Vue, Vuex and Bulma and is designed so that the site would not have to reroute itself or reload the browser unless a new campaign is chosen or the user logs out. 
+                                Multer was used to pass image data and create front-end image files passed from the API, and Passport is used to handle the user security.
+                                </p>
+                            </div>
+                            <div class="project-tech">
+                              <p class="project-header">Technologies used:</p>
+                              <p>Vue, Vuex, NodeJs, Axios, Sequelize, PostgreSQL, Multer, Bulma</p>
+                            </div>
+
+                            <div class="project-link">
+                              <p class="project-header">Link: Currently offline, demo site is in development.</a></p>
                             </div>
                           </div>
                         
@@ -364,8 +409,6 @@
                   <h3>Projects</h3>
                   <div class="container-fluid" id="project__thumbnails">
                       <div class="row">
-                        
-                        
                         <div class="col-lg-3 col-md-6 col-sm-12">
                           <div class="card" id="weather" data-toggle="modal" data-target=".weather-modal">
                             <div class="card__title">
@@ -400,13 +443,17 @@
 
                           </div>
                         
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card">
-                              <div class="card-expand">Click to See More</div>
-                            </div>
+                          <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card" id="campaign" data-toggle="modal" data-target=".campaign-modal">
+                                <div class="card__title">
+                                  <p>Campaign Tracker</p>
+                                </div>
+                                <div class="card-expand">
+                                  <p class="card-expand__button">Click to See More</p>
+                                </div>
+                              </div>
 
-                        </div>
-
+                          </div>
                       </div>
 
                   </div>

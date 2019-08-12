@@ -22,7 +22,7 @@ h2{
 }
 .btn-primary{
   background-color: $green;
-  border-color:$green;
+  border-color:$green; 
 }
 .btn-primary:hover{
   background-color: $cerulean;
@@ -30,7 +30,7 @@ h2{
 }
 h1{
   display: inline-block;
-  margin: 0;
+  margin: 0; 
   white-space: nowrap;
   color:$black-blue;
   font-size: 10vw;
@@ -214,7 +214,6 @@ header{
         margin-top: 2em;
         .card__title{
           position: absolute;
-          // top: -34px;
           transition: 0.5s;
           height: 0;
           text-align: center;
@@ -258,7 +257,12 @@ header{
       }
       #weather.card{
         background-image: url("https://www.fennellweb.com/images/projects/weather/thumb-1.png")
-        
+      }
+      #elixir.card{
+        background-image: url("https://www.fennellweb.com/sites/portfolio/images/projects/elixir/thumb-01.PNG")
+      }
+      #campaign.card{
+        background-image: url("https://www.fennellweb.com/sites/portfolio/images/projects/campaign/thumb-4.png")
       }
       .card:hover{
         cursor: pointer;
