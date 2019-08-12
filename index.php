@@ -302,7 +302,7 @@
                             </div>
 
                             <div class="project-link">
-                              <p class="project-header">Link: <a href="https://weather.fennellweb.com/" >live</a></p>
+                              <p class="project-header">Link: <a target="_blank" href="https://weather.fennellweb.com/" >live</a></p>
                             </div>
                           </div>
                         
@@ -348,7 +348,7 @@
                             </div>
 
                             <div class="project-link">
-                              <p class="project-header">Link: <a href="https://www.fennellweb.com/sites/elixir-of-life" >live</a></p>
+                              <p class="project-header">Link: <a target="_blank" href="https://www.fennellweb.com/sites/elixir-of-life" >live</a></p>
                             </div>
                           </div>
                         
