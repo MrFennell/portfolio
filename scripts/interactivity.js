@@ -5,7 +5,6 @@ $(document).ready(function(){
     let modalName = "modal-"+cardId;
     let modalGalleryId = "#"+modalName;
     let swiperContainerName = (modalName.replace("modal",".swiper-container"));
-    // let swiperPaginationName = (modalName.replace("modal",".swiper-pagination"));
     
     $(modalName).modal("show");
     $(modalGalleryId).on('shown.bs.modal', function(){
@@ -23,9 +22,6 @@ $(document).ready(function(){
               modifier: 1,
               slideShadows : true,
             },
-            // pagination: {
-            //   el: swiperPaginationName,
-            // },
           });
 
       });
